@@ -17,18 +17,39 @@ namespace Turtle22
             Turtle t1 = new Turtle();
 
             //t1.MoveBackward(200);
-            t1.SetDelay(200);
+            t1.SetDelay(2);
+            t1.TailUp();
+
+
+            t1.MoveForward(180);
+            t1.TurnLeft(90);
+            t1.MoveBackward(135);
+            t1.TailDown();
+            t1.MoveForward(360);
+            t1.TurnLeft(90);
+            t1.MoveForward(360);
+            t1.TurnLeft(90);
+            t1.MoveForward(360);
+            t1.TurnLeft(90);
+            t1.MoveForward(360);
+            t1.TailUp();
+            t1.MoveBackward(255);
+            t1.TurnLeft(90);
+            t1.MoveForward(20);
+            t1.TurnLeft(60.5);
             t1.TailDown();
 
-            t1.MoveForward(50);
-            t1.TurnRight(90);
-            t1.MoveForward(100);
-            t1.TurnLeft(90);
+            double step = 100 * 2 * Math.PI / 36;
+            for (int i = 0; i < 73; i++)
+            {
 
-            t1.MoveForward(50);
-            t1.TurnRight(90);
-            t1.MoveForward(100);
-            t1.TurnLeft(90);
-        } 
+                t1.MoveForward(15.667);
+                t1.TurnRight(5);
+
+            }
+
+
+
+        }
     }
 }
